@@ -1,5 +1,8 @@
 import React from 'react';
 import Title from '../Title/Title';
+import Cards from '../Cards/Cards';
+import { RestaurantsDataList } from '../Restaurants/RestaurantsDataList';
+
 function Home() {
   return (
     <div>
@@ -9,6 +12,7 @@ function Home() {
         mainDescription='デリバリー専門レストラン'
         subDescription='ご賞味あれ。'
       />
+      <Cards RestaurantsDataList={RestaurantsDataList} />
     </div>
   );
 }
