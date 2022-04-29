@@ -3,24 +3,26 @@ import React from 'react';
 function About() {
   return (
     <div className='text-center bg-gray-50 text-gray-800 py-20 px-6'>
-      <div class='container mx-auto'>
-        <section class='mb-32 text-gray-800 text-center'>
-          <h1 class='text-3xl font-bold mb-4'>かつらばキッチン紹介</h1>
+      <div className='container mx-auto'>
+        <section className='mb-32 text-gray-800 text-center'>
+          <h1 className='text-3xl font-bold mb-4'>かつらばキッチン紹介</h1>
           <h3 className='text-1xl font-extralight mb-20'>
             従来のレストランでは出来ない 「料理特化型レストラン」
             本来、レストランでは欠かせない、「立地」「接客」「空間」を廃止し、「美味しい料理」にこだわったらこの形にたどり着きました。
           </h3>
-          <div class='grid lg:gap-x-12 lg:grid-cols-3'>
-            <div class='mb-12 lg:mb-0'>
-              <div class='rounded-lg shadow-lg h-full block bg-white'>
-                <div class='flex justify-center'>
-                  <div class='p-4 bg-pink-500 rounded-full shadow-lg inline-block -mt-8'>
+          <div className='grid lg:gap-x-12 lg:grid-cols-3'>
+            <div className='mb-12 lg:mb-0'>
+              <div className='rounded-lg shadow-lg h-full block bg-white'>
+                <div className='flex justify-center'>
+                  <div className='p-4 bg-pink-500 rounded-full shadow-lg inline-block -mt-8'>
                     <svg
-                      class='w-8 h-8 text-white'
+                      className='w-8 h-8 text-white'
                       xmlns='http://www.w3.org/2000/svg'
                       viewBox='0 0 512 512'
                     >
-                      <span class='material-symbols-outlined'>storefront</span>
+                      <span className='material-symbols-outlined'>
+                        storefront
+                      </span>
                       <path
                         fill='currentColor'
                         d='M192 208c0-17.67-14.33-32-32-32h-16c-35.35 0-64 28.65-64 64v48c0 35.35 28.65 64 64 64h16c17.67 0 32-14.33 32-32V208zm176 144c35.35 0 64-28.65 64-64v-48c0-35.35-28.65-64-64-64h-16c-17.67 0-32 14.33-32 32v112c0 17.67 14.33 32 32 32h16zM256 0C113.18 0 4.58 118.83 0 256v16c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-16c0-114.69 93.31-208 208-208s208 93.31 208 208h-.12c.08 2.43.12 165.72.12 165.72 0 23.35-18.93 42.28-42.28 42.28H320c0-26.51-21.49-48-48-48h-32c-26.51 0-48 21.49-48 48s21.49 48 48 48h181.72c49.86 0 90.28-40.42 90.28-90.28V256C507.42 118.83 398.82 0 256 0z'
@@ -28,8 +30,8 @@ function About() {
                     </svg>
                   </div>
                 </div>
-                <div class='p-6'>
-                  <h5 class='text-lg font-semibold mb-4'>立地</h5>
+                <div className='p-6'>
+                  <h5 className='text-lg font-semibold mb-4'>立地</h5>
                   <p>
                     人通りの多い駅前ビルの一階。お店を出すのであれば少しでも人目に付きやすい場所に！しかしそういった場所は、えてして家賃も高くコストがかかります。当店は、人目につきずらい雑居ビルの6階に構え、お客様をデリバリーのみに絞ることで余ったコストを料理に費やしています。
                   </p>
@@ -37,12 +39,12 @@ function About() {
               </div>
             </div>
 
-            <div class='mb-12 lg:mb-0'>
-              <div class='rounded-lg shadow-lg h-full block bg-white'>
-                <div class='flex justify-center'>
-                  <div class='p-4 bg-pink-500 rounded-full shadow-lg inline-block -mt-8'>
+            <div className='mb-12 lg:mb-0'>
+              <div className='rounded-lg shadow-lg h-full block bg-white'>
+                <div className='flex justify-center'>
+                  <div className='p-4 bg-pink-500 rounded-full shadow-lg inline-block -mt-8'>
                     <svg
-                      class='w-8 h-8 text-white'
+                      className='w-8 h-8 text-white'
                       xmlns='http://www.w3.org/2000/svg'
                       viewBox='0 0 512 512'
                     >
@@ -53,8 +55,8 @@ function About() {
                     </svg>
                   </div>
                 </div>
-                <div class='p-6'>
-                  <h5 class='text-lg font-semibold mb-4'>接客</h5>
+                <div className='p-6'>
+                  <h5 className='text-lg font-semibold mb-4'>接客</h5>
                   <p>
                     質の高い接客を提供するにもコストがかかります。お客様に快適なひと時を過ごしていただくためには、たくさんのウェイターを揃え、お店に合った教育をしなければなりません。かつらばキッチンでは接客を省くことでその分に費やす時間もお金も料理に費やします。
                   </p>
@@ -62,12 +64,12 @@ function About() {
               </div>
             </div>
 
-            <div class=''>
-              <div class='rounded-lg shadow-lg h-full block bg-white'>
-                <div class='flex justify-center'>
-                  <div class='p-4 bg-pink-500 rounded-full shadow-lg inline-block -mt-8'>
+            <div className=''>
+              <div className='rounded-lg shadow-lg h-full block bg-white'>
+                <div className='flex justify-center'>
+                  <div className='p-4 bg-pink-500 rounded-full shadow-lg inline-block -mt-8'>
                     <svg
-                      class='w-8 h-8 text-white'
+                      className='w-8 h-8 text-white'
                       xmlns='http://www.w3.org/2000/svg'
                       viewBox='0 0 512 512'
                     >
@@ -78,8 +80,8 @@ function About() {
                     </svg>
                   </div>
                 </div>
-                <div class='p-6'>
-                  <h5 class='text-lg font-semibold mb-4'>空間</h5>
+                <div className='p-6'>
+                  <h5 className='text-lg font-semibold mb-4'>空間</h5>
                   <p>
                     オシャレなテーブルや椅子、手入れの行届いた食器類、お店のコンセプトに合わせた内装。整った環境での食事も素晴らしいけれど、一番居心地の良いご自宅での食事も負けないくらい素晴らしいはず。お皿も箸も使い捨てだけれども、その分美味しいものを安く食べていただきたい。
                   </p>
