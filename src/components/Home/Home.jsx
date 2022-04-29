@@ -2,7 +2,7 @@ import React from 'react';
 import Slide from '../Slide/Slide';
 import Title from '../Title/Title';
 import Cards from '../Cards/Cards';
-import { RestaurantsDataList } from '../Restaurants/RestaurantsDataList';
+import { RestaurantsDataList } from '../RestaurantsData/RestaurantsDataList';
 import About from '../About/About';
 
 function Home() {
