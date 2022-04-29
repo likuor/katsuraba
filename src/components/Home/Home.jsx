@@ -8,7 +8,7 @@ import About from '../About/About';
 function Home() {
   return (
     <div>
-      <Slide />
+      <Slide RestaurantsDataList={RestaurantsDataList} />
       <Title
         mainTitle='お客様をおもてなしするためのコスト'
         subTitle='”全部”料理に注ぎ込みました。'
