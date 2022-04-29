@@ -3,6 +3,7 @@ import Slide from '../Slide/Slide';
 import Title from '../Title/Title';
 import Cards from '../Cards/Cards';
 import { RestaurantsDataList } from '../Restaurants/RestaurantsDataList';
+import About from '../About/About';
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
         subDescription='ご賞味あれ。'
       />
       <Cards RestaurantsDataList={RestaurantsDataList} />
+      <About />
     </div>
   );
 }
