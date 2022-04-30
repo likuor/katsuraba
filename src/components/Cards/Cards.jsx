@@ -11,16 +11,16 @@ function Cards(props) {
               className='max-w-md bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700'
               key={index}
             >
-              <Link to='/location'>
+              <Link to={`/Location/${index}`}>
                 <img className='rounded-t-lg' src={restaurant.img} alt='' />
               </Link>
               <div className='p-5'>
-                <Link to='/'>
+                <Link to={`/Location/${index}`}>
                   <h5 className='mb-2 text-base font-bold tracking-tight text-gray-900 dark:text-white'>
                     {restaurant.name}
                   </h5>
                 </Link>
-                <Link to='/'>
+                <Link to={`/Location/${index}`}>
                   <p className='mb-3 font-normal text-xs text-gray-700 dark:text-gray-400'>
                     {restaurant.description}
                   </p>
