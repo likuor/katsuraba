@@ -3,6 +3,7 @@ import './index.css';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import About from './components/Pages/About';
+import Location from './components/Pages/Location';
 import Footer from './components/Footer/Footer';
 import NoMatch from './components/Pages/NoMatch';
 
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path='/About' element={<About />} />
+        <Route path='/Location' element={<Location />} />
         <Route path='*' element={<NoMatch />} />
       </Routes>
       <Footer />

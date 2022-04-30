@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Cards(props) {
   return (
@@ -10,18 +11,20 @@ function Cards(props) {
               className='max-w-md bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700'
               key={index}
             >
-              <a href='/'>
+              <Link to='/location'>
                 <img className='rounded-t-lg' src={restaurant.img} alt='' />
-              </a>
+              </Link>
               <div className='p-5'>
-                <a href='/'>
+                <Link to='/'>
                   <h5 className='mb-2 text-base font-bold tracking-tight text-gray-900 dark:text-white'>
                     {restaurant.name}
                   </h5>
+                </Link>
+                <Link to='/'>
                   <p className='mb-3 font-normal text-xs text-gray-700 dark:text-gray-400'>
                     {restaurant.description}
                   </p>
-                </a>
+                </Link>
               </div>
             </div>
           );
