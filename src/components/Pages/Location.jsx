@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import RestaurantTitle from '../Title/LocationTitle';
 import { useParams } from 'react-router-dom';
 
 function Location(props) {
@@ -15,25 +14,23 @@ function Location(props) {
 
   return (
     <div>
-      <div className='container mx-auto py-20 px-6'>
-        <img src={restaurant.img} alt='' />
-        <RestaurantTitle
-          mainTitle={restaurant.name}
-          subTitle={restaurant.address}
-          mainDescription={restaurant.branch}
-          subDescription={restaurant.description}
-        />
+      <img src={restaurant.img} alt='' className='h-96 w-full object-cover' />
+      <div className='text-center text-gray-800 py-20 px-6'>
+        <h1 className='text-3xl font-bold'>{restaurant.name}</h1>
+        <p className='text-1xl font-extralight'>{restaurant.description}</p>
       </div>
-      <div>
-        {restaurant?.locations?.map((restaurant, index) => {
-          return (
-            <div>
-              {restaurant.address}
-              {restaurant.branch}
+      {restaurant?.locations?.map((restaurant, index) => {
+        return (
+          <div key={index}>
+            <div className='text-center bg-gray-50 border text-gray-800 py-20 px-6 mt-0 m-10'>
+              <h3 className='text-1xl font-extralight'>
+                {restaurant.address}
+                {restaurant.branch}
+              </h3>
             </div>
-          );
-        })}
-      </div>
+          </div>
+        );
+      })}
     </div>
   );
 }
