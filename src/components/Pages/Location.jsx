@@ -28,21 +28,30 @@ function Location(props) {
                 {restaurant.address}
                 {restaurant.branch}
               </h3>
-              <div className='flex space-x-10'>
-                <Button
-                  deliveryCompany='anycarry'
-                  companyColor='bg-anycarryColor'
-                />
-                <Button
-                  deliveryCompany='出前館'
-                  companyColor='bg-demaekanColor'
-                />
-                <Button
-                  deliveryCompany='Uber Eats'
-                  companyColor='bg-uberEatsColor'
-                />
-                <Button deliveryCompany='menu' companyColor='bg-menuColor' />
-                <Button deliveryCompany='Wolt' companyColor='bg-woltColor' />
+              <div className='flex space-x-10 place-content-evenly'>
+                <a
+                  className='inline-block w-1/3'
+                  href={restaurant.anycarryUrl}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <Button
+                    deliveryCompany='anycarry'
+                    companyColor='bg-anycarryColor'
+                  />
+                </a>
+
+                <a
+                  className='inline-block w-1/3'
+                  href={restaurant.uberUrl}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <Button
+                    deliveryCompany='Uber Eats'
+                    companyColor='bg-uberEatsColor'
+                  />
+                </a>
               </div>
             </div>
           </div>
