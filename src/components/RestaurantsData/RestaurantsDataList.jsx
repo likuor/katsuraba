@@ -17,7 +17,7 @@ export const RestaurantsDataList = [
     img: image0,
     locations: [
       {
-        branch: '天使のネンミョン・悪魔のビビンミョン 田町店',
+        branch: '田町店',
         address: '〒1080014 東京都港区芝5-9-8 GEMS田町2F',
         anycarryUrl: 'https://anycarry.jp/tenshinonenmyon-akumanobibinmyon/',
         uberUrl:
