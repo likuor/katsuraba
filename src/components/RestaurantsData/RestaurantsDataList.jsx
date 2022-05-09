@@ -10,6 +10,7 @@ import image8 from './img/8.jpg';
 import image9 from './img/9.jpg';
 import image10 from './img/10.jpg';
 import image11 from './img/11.jpg';
+import image12 from './img/12.jpg';
 
 export const RestaurantsDataList = [
   {
@@ -204,5 +205,21 @@ export const RestaurantsDataList = [
     name: '白米で食べる‼ジャークチキンBOX',
     description:
       '10種類以上のスパイスと調味料にじっくり漬け込んだ特製のジャークチキン。白米に合うようちょっとだけ和のテイストを織り交ぜた当店完全オリジナルです。割合を気にするのはもちろん、スパイスによって粉末、粗びきを使い分けることで味、香りに深みを出しています。粒のたったホカホカのご飯とスパイシーな香り漂うジャークチキンの相性をご堪能ください。',
+  },
+  {
+    id: 12,
+    img: image12,
+    locations: [
+      {
+        branch: '田町店',
+        address: '〒1080014 東京都港区芝5-9-8 GEMS田町2F',
+        anycarryUrl: 'https://anycarry.jp/katuratamachi/',
+        uberUrl:
+          'https://www.ubereats.com/jp/store/%E3%81%93%E3%81%AF%E3%82%93%E5%B0%82%E7%94%A8%E7%82%99%E3%82%8A%E7%84%BC%E8%B1%9A%E4%B8%BC-%E6%A1%82-%E7%94%B0%E7%94%BA%E5%BA%97-char-siu-bowl-katsura-tamachi/YPzq42AwQ86XUtKpUTc5qA?diningMode=PICKUP',
+      },
+    ],
+    name: 'ご飯専用炙り焼豚丼 桂',
+    description:
+      'とにかくご飯に合うチャーシューを追い求めました。柔らかさ重視の特製チャーシューを大胆にカットしたチャーシュー丼専門店です。玉ねぎやニンニクをはじめとしたたっぷりの野菜と自家製ダレを合わせて野菜がとろとろに解けるまでじっくり煮込んだほろ旨チャーシューをご堪能ください。',
   },
 ];
