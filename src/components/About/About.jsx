@@ -2,6 +2,7 @@ import React from 'react';
 import { IoStorefront } from 'react-icons/io5';
 import { IoPeople } from 'react-icons/io5';
 import { ImSpoonKnife } from 'react-icons/im';
+import Underline from '../Underline/Underline';
 
 function About() {
   return (
@@ -9,7 +10,8 @@ function About() {
       <div className='container mx-auto'>
         <section className='mb-32 text-gray-800 text-center'>
           <h1 className='text-3xl font-bold mb-4'>かつらばキッチン紹介</h1>
-          <h3 className='text-1xl font-extralight mb-20'>
+          <Underline />
+          <h3 className='text-1xl my-5 font-extralight mb-20'>
             従来のレストランでは出来ない 「料理特化型レストラン」
             本来、レストランでは欠かせない、「立地」「接客」「空間」を廃止し、「美味しい料理」にこだわったらこの形にたどり着きました。
           </h3>

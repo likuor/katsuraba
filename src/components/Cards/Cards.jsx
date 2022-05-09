@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Underline from '../Underline/Underline';
 
 function Cards(props) {
   return (
@@ -8,6 +9,7 @@ function Cards(props) {
         <div className='container mx-auto'>
           <section className='text-gray-800 text-center'>
             <h1 className='text-3xl font-bold mb-4'>ブランド一覧</h1>
+            <Underline />
           </section>
         </div>
       </div>
@@ -15,7 +17,7 @@ function Cards(props) {
         {props.RestaurantsDataList.map((restaurant, index) => {
           return (
             <div
-              className='max-w-md bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700'
+              className='bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700'
               key={index}
             >
               <Link to={`/Location/${index}`}>
@@ -28,7 +30,7 @@ function Cards(props) {
                   </h5>
                 </Link>
                 <Link to={`/Location/${index}`}>
-                  <p className='mb-3 font-normal text-xs text-gray-700 dark:text-gray-400'>
+                  <p className='mb-1 font-normal text-xs text-gray-700 dark:text-gray-400'>
                     {restaurant.description}
                   </p>
                 </Link>
