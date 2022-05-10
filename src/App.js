@@ -1,7 +1,7 @@
 import './index.css';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
-import About from './components/Pages/About';
+import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import NoMatch from './components/Pages/NoMatch';
 import Location from './components/Pages/Location';
