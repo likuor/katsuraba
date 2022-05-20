@@ -30,31 +30,47 @@ function Location(props) {
                 <p>{restaurant.branch}</p>
                 <p>{restaurant.address}</p>
               </h3>
-              <div className='flex space-x-10 place-content-evenly'>
-                <a
-                  className='inline-block w-1/3'
-                  href={restaurant.anycarryUrl}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  <Button
-                    deliveryCompany='anycarry'
-                    companyColor='bg-anycarryColor'
-                  />
-                </a>
+              {restaurant.anycarryUrl ? (
+                <div className='flex space-x-10 place-content-evenly'>
+                  <a
+                    className='inline-block w-1/3'
+                    href={restaurant.anycarryUrl}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <Button
+                      deliveryCompany='anycarry'
+                      companyColor='bg-anycarryColor'
+                    />
+                  </a>
 
-                <a
-                  className='inline-block w-1/3'
-                  href={restaurant.uberUrl}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  <Button
-                    deliveryCompany='Uber Eats'
-                    companyColor='bg-uberEatsColor'
-                  />
-                </a>
-              </div>
+                  <a
+                    className='inline-block w-1/3'
+                    href={restaurant.uberUrl}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <Button
+                      deliveryCompany='Uber Eats'
+                      companyColor='bg-uberEatsColor'
+                    />
+                  </a>
+                </div>
+              ) : (
+                <div className='flex space-x-10 place-content-evenly'>
+                  <a
+                    className='inline-block w-1/3'
+                    href={restaurant.uberUrl}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <Button
+                      deliveryCompany='Uber Eats'
+                      companyColor='bg-uberEatsColor'
+                    />
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         );
