@@ -1,22 +1,25 @@
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import React from 'react';
 
 function Header() {
+  const [navbarOpen, setNavbarOpen] = React.useState(false);
+
   return (
     <div>
       <nav className='border-gray-200 px-2 sm:px-4 py-5 bg-pink-500'>
-        <div className='container flex flex-wrap justify-between items-center place-content-between'>
-          <Link className='flex items-center' to='/'>
-            <span className='self-center text-xl font-semibold whitespace-nowrap text-white ml-3'>
+        <div className='container flex flex-wrap justify-between items-center mx-auto'>
+          <a href='/' className='flex items-center'>
+            <span className='self-center text-xl font-semibold whitespace-nowrap text-white'>
               かつらばキッチン
             </span>
-          </Link>
+          </a>
           <button
             data-collapse-toggle='mobile-menu'
             type='button'
-            className='inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+            className='inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg md:hidden hover:bg-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-300'
             aria-controls='mobile-menu'
             aria-expanded='false'
+            onClick={() => setNavbarOpen(!navbarOpen)}
           >
             <span className='sr-only'>Open main menu</span>
             <svg
@@ -44,19 +47,29 @@ function Header() {
               ></path>
             </svg>
           </button>
-
-          <div className='hidden w-full md:block md:w-auto' id='mobile-menu'>
+          <div
+            id='mobile-menu'
+            className={
+              'w-full md:block md:w-auto ' + (navbarOpen ? '' : ' hidden')
+            }
+          >
             <ul className='flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium'>
               <li>
                 <NavLink
-                  className='block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700'
-                  style={({ isActive }) =>
-                    isActive ? { color: 'blue' } : undefined
-                  }
+                  className='block py-2 pr-4 pl-3 text-white border-b border-pink-300 hover:bg-pink-400 md:hover:bg-transparent md:border-0 md:hover:text-gray-800 md:p-0'
                   to='/about'
                   aria-current='page'
                 >
                   About
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className='block py-2 pr-4 pl-3 text-white border-b border-pink-300 hover:bg-pink-400 md:hover:bg-transparent md:border-0 md:hover:text-gray-800 md:p-0'
+                  to='/brands'
+                  aria-current='page'
+                >
+                  ブランド一覧
                 </NavLink>
               </li>
             </ul>
