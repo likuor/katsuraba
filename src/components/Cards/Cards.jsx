@@ -34,7 +34,7 @@ function Cards(props) {
                 </Link>
                 <Link to={`/Location/${index}`}>
                   <p className='mb-1 font-normal text-xs text-gray-400'>
-                    {restaurant.description}
+                    {restaurant.phrase}
                   </p>
                 </Link>
               </div>

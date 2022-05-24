@@ -12,12 +12,12 @@ function Footer() {
           </a>
           <ul className='flex flex-wrap items-center mb-6 text-sm sm:mb-0 text-white'>
             <li>
-              <a href='/' className='mr-4 hover:underline md:mr-6 '>
+              <a href='/about' className='mr-4 hover:underline md:mr-6 '>
                 About
               </a>
             </li>
             <li>
-              <a href='/' className='mr-4 hover:underline md:mr-6 '>
+              <a href='/brands' className='mr-4 hover:underline md:mr-6 '>
                 ブランド一覧
               </a>
             </li>
