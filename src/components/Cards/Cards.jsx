@@ -4,7 +4,7 @@ import Underline from '../Underline/Underline';
 
 function Cards(props) {
   return (
-    <div className='container mx-auto py-10'>
+    <div className='mt-10 md:mt-15 container mx-auto py-10'>
       <div className='text-center text-gray-800 py-10 px-6'>
         <div className='container mx-auto'>
           <section>
