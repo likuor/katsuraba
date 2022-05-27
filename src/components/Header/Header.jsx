@@ -6,10 +6,10 @@ function Header() {
 
   return (
     <div>
-      <nav className='border-gray-200 px-2 sm:px-4 py-5 bg-pink-500'>
+      <nav className='border-gray-200 px-4 py-5 bg-pink-500'>
         <div className='container flex flex-wrap justify-between items-center mx-auto'>
           <a href='/' className='flex items-center'>
-            <span className='self-center text-xl font-semibold whitespace-nowrap text-white'>
+            <span className='self-center text-lg md:text-xl font-semibold whitespace-nowrap text-white'>
               かつらばキッチン
             </span>
           </a>

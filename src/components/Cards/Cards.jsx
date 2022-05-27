@@ -8,9 +8,7 @@ function Cards(props) {
       <div className='text-center text-gray-800 py-10 px-6'>
         <div className='container mx-auto'>
           <section>
-            <h1 className='text-2xl md:text-3xl font-bold mb-4'>
-              ブランド一覧
-            </h1>
+            <h1 className='text-xl md:text-2xl font-bold mb-4'>ブランド一覧</h1>
             <Underline />
           </section>
         </div>
@@ -18,7 +16,7 @@ function Cards(props) {
       <div className='grid gap-4 md:grid-cols-3 grid-cols-1 mx-6 md:mx-0'>
         {props.RestaurantsDataList.map((restaurant, index) => {
           return (
-            <div className='rounded-lg shadow-md bg-gray-800' key={index}>
+            <div className='rounded-lg bg-gray-800' key={index}>
               <Link to={`/Location/${index}`}>
                 <img
                   className='rounded-t-lg w-full'
