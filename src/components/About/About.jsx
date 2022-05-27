@@ -6,7 +6,7 @@ import Underline from '../Underline/Underline';
 
 function About() {
   return (
-    <div className='text-center bg-gray-50 text-gray-800 py-20 px-6'>
+    <div className='mt-10 md:mt-15 text-center bg-gray-50 text-gray-800 pt-20 md:py-20 px-6'>
       <div className='container mx-auto'>
         <section className='mb-32 text-gray-800 text-center'>
           <h1 className='text-xl md:text-2xl font-bold mb-4'>
@@ -31,7 +31,7 @@ function About() {
                   </div>
                 </div>
                 <div className='p-6'>
-                  <h5 className='text-sm md:text-base font-semibold mb-4'>
+                  <h5 className='text-base md:text-lg font-semibold mb-4'>
                     立地
                   </h5>
                   <p className='text-sm md:text-base'>
@@ -54,7 +54,7 @@ function About() {
                   </div>
                 </div>
                 <div className='p-6'>
-                  <h5 className='text-sm md:text-base font-semibold mb-4'>
+                  <h5 className='text-base md:text-lg font-semibold mb-4'>
                     接客
                   </h5>
                   <p className='text-sm md:text-base'>
@@ -77,7 +77,7 @@ function About() {
                   </div>
                 </div>
                 <div className='p-6'>
-                  <h5 className='text-sm md:text-base font-semibold mb-4'>
+                  <h5 className='text-base md:text-lg font-semibold mb-4'>
                     空間
                   </h5>
                   <p className='text-sm md:text-base'>
