@@ -29,9 +29,9 @@ function Location(props) {
                 <p>{restaurant.address}</p>
               </h3>
               {restaurant.anycarryUrl ? (
-                <div className='flex space-x-10 place-content-evenly'>
+                <div className='flex flex-wrap space-y-10 md:space-y-0 md:space-x-10 place-content-evenly'>
                   <a
-                    className='inline-block w-1/3'
+                    className='inline-block w-9/12 md:w-1/3'
                     href={restaurant.anycarryUrl}
                     target='_blank'
                     rel='noopener noreferrer'
@@ -43,7 +43,7 @@ function Location(props) {
                   </a>
 
                   <a
-                    className='inline-block w-1/3'
+                    className='inline-block w-9/12 md:w-1/3'
                     href={restaurant.uberUrl}
                     target='_blank'
                     rel='noopener noreferrer'
