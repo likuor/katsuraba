@@ -6,7 +6,7 @@ import About from '../About/About';
 
 function Home(props) {
   return (
-    <div>
+    <div className='mt-10 md:mt-15'>
       <Slide RestaurantsDataList={props.RestaurantsDataList} />
       <Title
         mainTitle='お客様をおもてなしするためのコスト'

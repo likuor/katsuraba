@@ -14,7 +14,7 @@ function Location(props) {
   }, [props, id]);
 
   return (
-    <div>
+    <div className='mt-10 md:mt-15'>
       <img src={restaurant.img} alt='' className='h-96 w-full object-cover' />
       <div className='text-center text-gray-800 mx-auto py-20 w-3/4'>
         <h1 className='text-xl md:text-2xl font-bold'>{restaurant.name}</h1>
