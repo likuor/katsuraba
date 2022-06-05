@@ -14,7 +14,32 @@ function Cards(props) {
         </div>
       </div>
       <div className='grid gap-4 md:grid-cols-3 grid-cols-1 mx-6 md:mx-0'>
-        {props.RestaurantsDataList.map((restaurant, index) => {
+        {/* {props.RestaurantsDataList.map((restaurant, index) => {
+          return (
+            <div className='rounded-lg bg-gray-800' key={index}>
+              <Link to={`/Location/${index}`}>
+                <img
+                  className='rounded-t-lg w-full'
+                  src={restaurant.img}
+                  alt=''
+                />
+              </Link>
+              <div className='p-5'>
+                <Link to={`/Location/${index}`}>
+                  <h5 className='mb-2 text-base font-bold tracking-tight text-white'>
+                    {restaurant.name}
+                  </h5>
+                </Link>
+                <Link to={`/Location/${index}`}>
+                  <p className='mb-1 font-normal text-xs text-gray-400'>
+                    {restaurant.phrase}
+                  </p>
+                </Link>
+              </div>
+            </div>
+          );
+        })} */}
+        {props.dbRestaurant.map((restaurant, index) => {
           return (
             <div className='rounded-lg bg-gray-800' key={index}>
               <Link to={`/Location/${index}`}>
