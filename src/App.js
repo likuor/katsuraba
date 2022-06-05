@@ -47,11 +47,21 @@ function App() {
         />
         <Route
           path='/Brands'
-          element={<Cards RestaurantsDataList={RestaurantsDataList} />}
+          element={
+            <Cards
+              RestaurantsDataList={RestaurantsDataList}
+              dbRestaurant={restaurants}
+            />
+          }
         />
         <Route
           path='/Location/:id'
-          element={<Location RestaurantsDataList={RestaurantsDataList} />}
+          element={
+            <Location
+              RestaurantsDataList={RestaurantsDataList}
+              dbRestaurant={restaurants}
+            />
+          }
         />
         <Route path='/About' element={<About />} />
         <Route path='*' element={<NoMatch />} />

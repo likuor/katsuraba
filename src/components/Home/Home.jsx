@@ -5,8 +5,6 @@ import Cards from '../Cards/Cards';
 import About from '../About/About';
 
 function Home(props) {
-  console.log(props.dbRestaurant);
-
   return (
     <div className='mt-10 md:mt-15'>
       <Slide
